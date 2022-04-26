@@ -1,13 +1,24 @@
 <template>
-	<div id="app"></div>
+	<div id="app">
+		<h1>Explorador de carreras</h1>
+		<NavBar />
+	</div>
 </template>
+<script>
+	import NavBar from './components/NavBar';
 
+	export default {
+		components: {
+			NavBar,
+		},
+	};
+</script>
 <style lang="scss">
 	@import url('https://fonts.googleapis.com/css?family=Karla');
 	@import url('https://fonts.googleapis.com/css?family=Montserrat');
 	:root {
-		--color-blue-1: #1161f8;
-		--color-blue-2: #0c38c2;
+		--color-blue-1: #0c38c2;
+		--color-blue-2: #1161f8;
 		--color-pink-1: #ffd6d6;
 		--color-pink-2: #c290f3;
 		--color-red-1: #ff0c4f;
@@ -17,8 +28,8 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		text-align: center;
-		color: #2c3e50;
-		margin-top: 60px;
+		color: var(--color-blue-1);
+		margin-top: 2rem;
 	}
 
 	/* colors */
