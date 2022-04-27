@@ -1,15 +1,37 @@
 <template>
 	<div id="app">
 		<h1>Explorador de carreras</h1>
-		<NavBar />
+		<NavBar @clickedElement="handleELement" />
+		<br />
+		<div><component :is="clickedElement" /></div>
+		<br />
+		<SearchBar />
 	</div>
 </template>
 <script>
 	import NavBar from './components/NavBar';
-
+	import Salarios from './components/Salarios';
+	import Empleabilidad from './components/Empleabilidad';
+	import Comparador from './components/Comparador';
+	import SearchBar from './components/UI/SearchBar';
 	export default {
+		data() {
+			return {
+				name: 'App',
+				clickedElement: 'Salarios',
+			};
+		},
 		components: {
 			NavBar,
+			Salarios,
+			Empleabilidad,
+			Comparador,
+			SearchBar,
+		},
+		methods: {
+			handleELement(element) {
+				this.clickedElement = element;
+			},
 		},
 	};
 </script>
