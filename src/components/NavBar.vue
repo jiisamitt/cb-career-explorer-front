@@ -1,11 +1,20 @@
 <template>
-	<div>
+	<div class="uppercase navbar-container">
 		<span
 			:class="getClass(element)"
-			@click="handleClick(element)"
+			@click="disabled ? () => {} : handleClick(element)"
 			v-for="(element, index) in elements"
 			:key="index"
-			>{{ element }}</span
+		>
+			<span v-if="element === 'Salaries'">{{
+				$t('home.nav-bar-elements[0]')
+			}}</span>
+			<span v-if="element === 'Employment'">{{
+				$t('home.nav-bar-elements[1]')
+			}}</span>
+			<span style="white-space: nowrap" v-if="element === 'Career Comparer'">{{
+				$t('home.nav-bar-elements[2]')
+			}}</span></span
 		>
 	</div>
 </template>
@@ -15,15 +24,21 @@
 		data() {
 			return {
 				name: 'NavBar',
-				elements: ['Salarios', 'Empleabilidad', 'Comparador de Carreras'],
-				clickedElement: 'Salarios',
+				elements: ['Salaries', 'Employment', 'Career Comparer'],
+				clickedElement: 'Salaries',
 			};
+		},
+		props: {
+			disabled: {
+				type: Boolean,
+				default: true,
+			},
 		},
 		methods: {
 			handleClick(element) {
 				this.clickedElement = element;
-				if (element === 'Comparador de Carreras') {
-					this.$emit('clickedElement', 'Comparador');
+				if (element === 'Career Comparer') {
+					this.$emit('clickedElement', 'Career Comparer');
 				} else {
 					this.$emit('clickedElement', element);
 				}
@@ -39,20 +54,22 @@
 </script>
 
 <style scoped>
+	.navbar-container {
+		position: relative;
+		width: max-content;
+	}
 	.navbar-element {
-		background: rgb(182, 221, 235);
+		color: var(--color-black-foggy);
 		padding: 0.5rem;
-		border-radius: 5px;
-		margin: 0.5rem;
+		border-radius: 2px;
+		margin: 0.5rem 0rem 0.5rem 1rem;
 		cursor: pointer;
 	}
 	.navbar-element-clicked {
-		background: rgb(48, 132, 163);
+		border-bottom: 2px solid var(--color-primary);
+		color: var(--color-black);
 	}
 	.navbar-element:hover {
-		background: rgb(130, 187, 207);
-	}
-	.navbar-element:active {
-		background: rgb(101, 135, 148);
+		background: rgb(244, 246, 247);
 	}
 </style>

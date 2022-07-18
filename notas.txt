@@ -1,0 +1,12 @@
+- años no van
+- Todos los niveles educativos
+- Áreas según nivel educativo
+- Carrera según área y nivel educativo
+- Salario promedio carrera / empleabilidad promedio carrera
+- Salario promedio por área / empleabilidad promedio por área
+- Salario promedio de la carrera por años despues de egresado / empleabilidad
+- Salario promedio de la carrera por nivel educativo / empleabilidad
+- Top/botom 10 carreras nivel educativo (puede ser area) / empleabilidad EDDIE ok
+- Ranking carreras por salario / empleabilidad
+- Costo de carrera
+- Duración formal EDDIE ok

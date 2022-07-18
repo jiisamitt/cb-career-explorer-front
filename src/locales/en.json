@@ -1,0 +1,14 @@
+{
+	"home": {
+		"title": "Career Explorer",
+		"nav-bar-elements": ["Salaries", "Employment", "Career Comparer"],
+		"search-bar-elements": [
+			"Choose a year",
+			"Choose educational level",
+			"Choose an area",
+			"Choose a career"
+		],
+		"search-bar-button": "Search",
+		"small-nav-bar": ["Salaries", "Employment", "Top 10", "Ranking"]
+	}
+}

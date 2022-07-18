@@ -1,0 +1,48 @@
+{
+	"home": {
+		"title": "Explorador de Carreras",
+		"nav-bar-elements": ["Inicio", "Comparador de carreras", "Simulador"],
+		"search-bar-elements": [
+			"Seleccione el año",
+			"Seleccione el nivel educativo",
+			"Seleccione el área de conocimiento",
+			"Seleccione la carrera"
+		],
+		"search-bar-button": "Buscar",
+		"small-nav-bar": ["Salarios", "Empleabilidad", "Top 10", "Ranking"]
+	},
+	"welcome": {
+		"title": "¡Te damos la Bienvenida al Explorador de Carreras de Educación Superior",
+		"subtitle1": "En esta plataforma podrás encontrar información sobre diferentes características de la carrera, comparar diferentes opciones y simular tus postulaciones!",
+		"subtitle2": "¡Completa los filtros y comienza a explorar!",
+		"select-institution-type": "Tipo de institución",
+		"select-area": "Seleccione el área de conocimiento",
+		"select-career": "Escribe o selecciona la carrera",
+		"btn": "Buscar"
+	},
+	"general": {
+		"switch-left": "Salarios",
+		"switch-right": "Empleabilidad",
+		"average-values": {
+			"salaries-career": "Salario promedio profesionales",
+			"employability-career": "Empleabilidad promedio profesionales",
+			"salaries-general": "Salario promedio en el área",
+			"employability-general": "Empleabilidad promedio en el área",
+			"employability-2": "de cada 100",
+			"not-available": "No disponible"
+		},
+		"top": {
+			"common": "Top 10 Carreras de Técnico Profesional con mayor ",
+			"common-2": "en el sector formal"
+		},
+		"ranking": "Ranking de esta carrera con relación al resto de programas",
+		"ranking-download": "Descargar ranking completo",
+		"modal-btn": "Ver más ",
+		"graph": {
+			"years": "¿Cuál es la tasa de empleo formal de los profesionales según sus años después de graduados?",
+			"institution": "¿Cuál es la tasa de empleo formal de los profesionales según su nivel educativo?",
+			"switch-left": "Años de graduado",
+			"switch-right": "Nivel Educativo"
+		}
+	}
+}
